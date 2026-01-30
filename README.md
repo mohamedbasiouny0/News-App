@@ -1,20 +1,33 @@
-HEAD
-# test4
+# 📰 News App (Flutter)
 
-A new Flutter project.
+A modern and clean **Flutter News Application** that delivers the latest news with a smooth UI and efficient architecture.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Features
 
-A few resources to get you started if this is your first Flutter project:
+- 🗞️ Browse latest news articles
+- 🌐 Fetch data from a RESTful News API
+- 🖼️ Network images with caching
+- 📱 Responsive UI for different screen sizes
+- 🧩 Clean and maintainable project structure
+- ⚡ Fast and smooth performance
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
-# News-App
-275cc4a032f4fb120e784ccf06d8ead468fca695
+## 🛠️ Built With
+
+- **Flutter** (Dart)
+- **RESTful APIs**
+- **HTTP package**
+- **MVVM / Clean Architecture principles**
+- **Material Design**
+
+---
+
+## 📸 Screenshots
+
+>
+><img width="1080" height="2400" alt="Screenshot_1769800544" src="https://github.com/user-attachments/assets/e2359aeb-cbd6-4420-bc77-0a46ae1e0ec8" />
+
+
