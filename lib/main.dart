@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:test4/views/home_view.dart';
-import 'package:test4/widgets/shimmer.dart';
 
 void main() {
   runApp(NewsApp());

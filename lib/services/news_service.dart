@@ -21,13 +21,7 @@ class NewsService {
       final List<dynamic> articlesList = jsonData['articles'];
 
       for (var element in articlesList) {
-        articleModelList.add(
-          ArticleModel(
-            image: element['urlToImage'],
-            title: element['title'],
-            description: element['description'],
-          ),
-        );
+        articleModelList.add(ArticleModel.fromJson(element));
       }
 
       return articleModelList;

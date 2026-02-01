@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:test4/models/article_model.dart';
 import 'package:test4/services/news_service.dart';
 import 'package:test4/widgets/news_list_view.dart';
-import 'package:test4/widgets/shimmer.dart';
 import 'package:test4/widgets/shimmer_list_view.dart';
 
 class NewsListViewBuilder extends StatefulWidget {
