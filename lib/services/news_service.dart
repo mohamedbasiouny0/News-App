@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:test4/models/article_model.dart';
+import 'package:test4/services/api_exceptions.dart';
 
 class NewsService {
   final Dio dio;
@@ -25,8 +26,8 @@ class NewsService {
       }
 
       return articleModelList;
-    } on Exception {
-      return [];
+    } on DioException catch (e) {
+      throw ApiExceptions.handleDioException(e);
     }
   }
 }
