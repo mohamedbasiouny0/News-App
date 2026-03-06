@@ -1,5 +1,7 @@
+import 'package:cached_network_image_ce/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:test4/models/article_model.dart';
+import 'package:test4/widgets/cached_N_I.dart';
 
 // ignore: must_be_immutable
 class NewsTile extends StatefulWidget {
@@ -35,11 +37,7 @@ class _NewsTileState extends State<NewsTile> {
               ClipRRect(
                 borderRadius: BorderRadiusGeometry.circular(8),
                 child: widget.articleModel.image != null
-                    ? Image.network(
-                        widget.articleModel.image!,
-                        width: double.infinity,
-                        fit: BoxFit.cover,
-                      )
+                    ? CachedNI(imagePath: widget.articleModel.image!)
                     : SizedBox(),
               ),
 

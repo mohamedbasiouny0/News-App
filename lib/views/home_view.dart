@@ -27,6 +27,7 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        scrolledUnderElevation: 0,
         backgroundColor: Colors.amber,
         centerTitle: true,
         title: Row(
@@ -48,7 +49,7 @@ class HomeView extends StatelessWidget {
             ),
           ],
         ),
-        elevation: 20,
+        elevation: 0,
       ),
       body: CustomScrollView(
         slivers: [

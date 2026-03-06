@@ -12,7 +12,7 @@ final class GetNewsSuccess extends GetNewsState {
 final class GetNewsLoading extends GetNewsState {}
 
 final class GetNewsLFailure extends GetNewsState {
-  final String? errorMessage;
+  final String errorMessage;
 
   GetNewsLFailure({required this.errorMessage});
 }

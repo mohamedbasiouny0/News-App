@@ -25,17 +25,34 @@ class _NewsListViewBuilderState extends State<NewsListViewBuilder> {
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder(
+    return BlocBuilder<GetNewsCubit, GetNewsState>(
       builder: (context, state) {
         if (state is GetNewsSuccess) {
           return NewsListView(artList: state.articalList);
-        }
-        if (state is GetNewsLFailure) {
-          return ErrorMessageWidget(message: state.errorMessage);
+        } else if (state is GetNewsLFailure) {
+          return SliverToBoxAdapter(
+            child: ErrorMessageWidget(message: state.errorMessage),
+          );
         } else {
           return ShimmerListView();
         }
       },
     );
+    // return FutureBuilder<List<ArticleModel>>(
+    //   future: future,
+    //   builder: (context, snapShots) {
+    //     if (snapShots.hasData) {
+    //       return NewsListView(artList: snapShots.data!);
+    //     } else if (snapShots.hasError) {
+    //       return SliverToBoxAdapter(
+    //         child: Center(
+    //           child: Text('There was an error', style: TextStyle(fontSize: 20)),
+    //         ),
+    //       );
+    //     } else {
+    //       return ShimmerListView();
+    //     }
+    //   },
+    // );
   }
 }

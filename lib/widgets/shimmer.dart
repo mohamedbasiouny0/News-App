@@ -7,10 +7,10 @@ class ShimmerWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 30),
+      padding: const EdgeInsets.only(top: 8),
       child: SizedBox(
         child: Shimmer.fromColors(
-          baseColor: Colors.grey,
+          baseColor: Colors.grey.shade300,
           highlightColor: Colors.white,
           child: Column(
             children: [
@@ -19,7 +19,7 @@ class ShimmerWidget extends StatelessWidget {
                 width: double.infinity,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(8),
-                  color: Colors.grey,
+                  color: Colors.grey.shade300,
                 ),
               ),
               SizedBox(height: 5),
@@ -28,7 +28,7 @@ class ShimmerWidget extends StatelessWidget {
                 width: double.infinity,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(8),
-                  color: Colors.grey,
+                  color: Colors.grey.shade300,
                 ),
               ),
               SizedBox(height: 5),
@@ -38,7 +38,7 @@ class ShimmerWidget extends StatelessWidget {
                 width: double.infinity,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(8),
-                  color: Colors.grey,
+                  color: Colors.grey.shade300,
                 ),
               ),
               SizedBox(height: 5),
@@ -48,7 +48,7 @@ class ShimmerWidget extends StatelessWidget {
                 width: double.infinity,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(8),
-                  color: Colors.grey,
+                  color: Colors.grey.shade300,
                 ),
               ),
             ],
