@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:dio/dio.dart';
 import 'package:meta/meta.dart';
-import 'package:test4/models/article_model.dart';
+import 'package:test4/models/artical_model/article_model.dart';
 import 'package:test4/services/api_error.dart';
 import 'package:test4/services/news_service.dart';
 

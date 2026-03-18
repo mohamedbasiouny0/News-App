@@ -1,6 +1,5 @@
-import 'package:cached_network_image_ce/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:test4/models/article_model.dart';
+import 'package:test4/models/artical_model/article_model.dart';
 import 'package:test4/widgets/cached_N_I.dart';
 
 // ignore: must_be_immutable
@@ -30,22 +29,19 @@ class _NewsTileState extends State<NewsTile> {
               ),
             ),
           ),
-
           Column(
             mainAxisSize: MainAxisSize.min,
             children: [
               ClipRRect(
                 borderRadius: BorderRadiusGeometry.circular(8),
-                child: widget.articleModel.image != null
-                    ? CachedNI(imagePath: widget.articleModel.image!)
+                child: widget.articleModel.urlToImage != null
+                    ? CachedNI(imagePath: widget.articleModel.urlToImage!)
                     : SizedBox(),
               ),
-
               Text(
-                widget.articleModel.title,
+                widget.articleModel.title!,
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
               ),
-
               widget.articleModel.description != null
                   ? GestureDetector(
                       onTap: () {

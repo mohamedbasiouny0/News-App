@@ -1,17 +1,17 @@
-class ArticleModel {
-  final String? image;
-  final String title;
-  final String? description;
+// class ArticleModel {
+//   final String? image;
+//   final String title;
+//   final String? description;
 
-  ArticleModel({
-    required this.image,
-    required this.title,
-    required this.description,
-  });
+//   ArticleModel({
+//     required this.image,
+//     required this.title,
+//     required this.description,
+//   });
 
-  factory ArticleModel.fromJson(dynamic json) => ArticleModel(
-    image: json['urlToImage'],
-    title: json['title'],
-    description: json['description'],
-  );
-}
+//   factory ArticleModel.fromJson(Map<String, dynamic> json) => ArticleModel(
+//     image: json['urlToImage'],
+//     title: json['title'],
+//     description: json['description'],
+//   );
+// }

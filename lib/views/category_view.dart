@@ -8,7 +8,9 @@ class CategoryView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        surfaceTintColor: Colors.transparent,
         scrolledUnderElevation: 0,
+        elevation: 0,
         title: Text(category, style: TextStyle(fontWeight: FontWeight.bold)),
       ),
       body: CustomScrollView(slivers: [NewsListViewBuilder(cateory: category)]),

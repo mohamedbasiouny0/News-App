@@ -28,6 +28,7 @@ class HomeView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         scrolledUnderElevation: 0,
+        surfaceTintColor: Colors.transparent,
         backgroundColor: Colors.amber,
         centerTitle: true,
         title: Row(
