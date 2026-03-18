@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:test4/models/artical_model/article_model.dart';
 import 'package:test4/widgets/cached_N_I.dart';
+import 'package:test4/widgets/url_launcher.dart';
 
 // ignore: must_be_immutable
 class NewsTile extends StatefulWidget {
@@ -32,11 +33,15 @@ class _NewsTileState extends State<NewsTile> {
           Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              ClipRRect(
-                borderRadius: BorderRadiusGeometry.circular(8),
-                child: widget.articleModel.urlToImage != null
-                    ? CachedNI(imagePath: widget.articleModel.urlToImage!)
-                    : SizedBox(),
+              GestureDetector(
+                onTap: () =>
+                    UrlLauncher.launcherUrl(url: widget.articleModel.url!),
+                child: ClipRRect(
+                  borderRadius: BorderRadiusGeometry.circular(8),
+                  child: widget.articleModel.urlToImage != null
+                      ? CachedNI(imagePath: widget.articleModel.urlToImage!)
+                      : SizedBox(),
+                ),
               ),
               Text(
                 widget.articleModel.title!,
